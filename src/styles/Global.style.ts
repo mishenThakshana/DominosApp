@@ -36,9 +36,59 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     borderRadius: 20,
   },
+  formBtnContainerExtraSm: {
+    paddingHorizontal: 30,
+    paddingVertical: 10,
+    borderRadius: 20,
+    marginHorizontal: 5,
+  },
   formBtnContainerLg: {
     padding: 30,
     borderRadius: 20,
+  },
+  topBarContainer: {
+    margin: 20,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  avatarContainer: {
+    backgroundColor: colors.LIGHTGRAY,
+    padding: 10,
+    borderRadius: 100,
+  },
+  sectionHeadingContainer: {
+    marginVertical: 20,
+    marginHorizontal: 20,
+  },
+  menuCardContainer: {
+    marginVertical: 10,
+    marginHorizontal: 10,
+    padding: 20,
+    backgroundColor: colors.LIGHT,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 10,
+    elevation: 5,
+  },
+  menuTitle: {
+    fontSize: 14,
+    fontWeight: 'bold',
+    color: colors.SECONDARY,
+    marginVertical: 10,
+  },
+  bestCardCardContainer: {
+    marginVertical: 10,
+    marginHorizontal: 10,
+    padding: 10,
+    backgroundColor: colors.LIGHT,
+    borderRadius: 10,
+    elevation: 5,
+  },
+  bestSellingPrice: {
+    color: colors.ACCENT,
+    fontSize: 16,
+    fontWeight: 'bold',
   },
 });
 

@@ -13,10 +13,14 @@ interface FormBtnInterface {
 
 const FormBtn: FC<FormBtnInterface> = ({handler, label, type, size}) => {
   return (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={handler}>
       <View
         style={[
-          size == 'sm' ? styles.formBtnContainerSm : styles.formBtnContainerLg,
+          size == 'xs'
+            ? styles.formBtnContainerExtraSm
+            : size == 'sm'
+            ? styles.formBtnContainerSm
+            : styles.formBtnContainerLg,
           type === 'success'
             ? {backgroundColor: colors.ACCENT}
             : {backgroundColor: colors.PRIMARY},
