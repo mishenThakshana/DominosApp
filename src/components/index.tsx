@@ -10,3 +10,7 @@ export {default as MenuCard} from './MenuCard';
 export {default as PizzaMenu} from './PizzaMenu';
 export {default as BestSellerCard} from './BestSellerCard';
 export {default as BestSellers} from './BestSellers';
+export {default as SingleTopBar} from './SingleTopBar';
+export {default as IconBtn} from './IconBtn';
+export {default as ProductCard} from './ProductCard';
+export {default as SizeBtn} from './SizeBtn';

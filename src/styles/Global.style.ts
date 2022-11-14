@@ -43,8 +43,9 @@ const styles = StyleSheet.create({
     marginHorizontal: 5,
   },
   formBtnContainerLg: {
-    padding: 30,
+    padding: 15,
     borderRadius: 20,
+    alignItems: 'center',
   },
   topBarContainer: {
     margin: 20,
@@ -89,6 +90,45 @@ const styles = StyleSheet.create({
     color: colors.ACCENT,
     fontSize: 16,
     fontWeight: 'bold',
+  },
+  productCardContainer: {
+    margin: 20,
+    marginHorizontal: 40,
+  },
+  productTitleContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  sizeSelectionContainer: {
+    marginVertical: 10,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  productRatingContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  sizeBtnContainer: {
+    padding: 5,
+    alignItems: 'center',
+    marginHorizontal: 5,
+    paddingHorizontal: 18,
+  },
+  sizeSelected: {
+    backgroundColor: colors.PRIMARY,
+    borderRadius: 5,
+  },
+  sizeSelectedContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  productDescription: {
+    color: colors.SECONDARY,
+    textAlign: 'justify',
+    letterSpacing: 1,
+    marginVertical: 20,
   },
 });
 

@@ -2,6 +2,8 @@
 import {View, FlatList} from 'react-native';
 import {MenuCard} from 'src/components';
 import {MenuPizza1, MenuPizza2} from 'src/assets/images';
+import {FC} from 'react';
+import routes from 'src/constants/routes';
 
 interface MenuPizzaInterface {
   image: any;
@@ -15,7 +17,11 @@ const PizzaItems: MenuPizzaInterface[] = [
   {image: MenuPizza2, title: 'Chilly Pizza'},
 ];
 
-const PizzaMenu = () => {
+interface PizzaMenu {
+  navigation: any;
+}
+
+const PizzaMenu: FC<PizzaMenu> = ({navigation}) => {
   return (
     <View style={{marginHorizontal: 10}}>
       <FlatList
@@ -23,7 +29,11 @@ const PizzaMenu = () => {
         horizontal
         data={PizzaItems}
         renderItem={({item}) => (
-          <MenuCard image={item.image} title={item.title} />
+          <MenuCard
+            handler={() => navigation.navigate(routes.PRODUCT)}
+            image={item.image}
+            title={item.title}
+          />
         )}
         keyExtractor={item => item.title}
       />

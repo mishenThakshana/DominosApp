@@ -25,7 +25,9 @@ const FormBtn: FC<FormBtnInterface> = ({handler, label, type, size}) => {
             ? {backgroundColor: colors.ACCENT}
             : {backgroundColor: colors.PRIMARY},
         ]}>
-        <Text style={{color: colors.LIGHT}}>{label}</Text>
+        <Text style={[size === 'lg' && {fontSize: 16}, {color: colors.LIGHT}]}>
+          {label}
+        </Text>
       </View>
     </TouchableOpacity>
   );

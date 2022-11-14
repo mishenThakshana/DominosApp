@@ -1,3 +1,4 @@
+import {FC} from 'react';
 import {SafeAreaView} from 'react-native';
 import {
   Topbar,
@@ -8,13 +9,17 @@ import {
 } from 'src/components';
 import styles from 'src/styles/Global.style';
 
-const Home = () => {
+interface HomeInterface {
+  navigation: any;
+}
+
+const Home: FC<HomeInterface> = ({navigation}) => {
   return (
     <SafeAreaView style={styles.rootContainer}>
       <Topbar location="Sri Lanka, Colombo" />
       <DealsTab />
       <SectionHeading title="Explore Menu" />
-      <PizzaMenu />
+      <PizzaMenu navigation={navigation} />
       <SectionHeading title="Best Sellers" />
       <BestSellers />
     </SafeAreaView>

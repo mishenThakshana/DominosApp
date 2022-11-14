@@ -1,11 +1,18 @@
-import {View, Text} from 'react-native';
-import React from 'react';
+import {FC} from 'react';
+import {View, Text, SafeAreaView} from 'react-native';
+import {SingleTopBar, ProductCard} from 'src/components';
+import styles from 'src/styles/Global.style';
 
-const Product = () => {
+interface ProductInterface {
+  navigation: any;
+}
+
+const Product: FC<ProductInterface> = ({navigation}) => {
   return (
-    <View>
-      <Text>Product</Text>
-    </View>
+    <SafeAreaView style={styles.rootContainer}>
+      <SingleTopBar navigation={navigation} />
+      <ProductCard />
+    </SafeAreaView>
   );
 };
 
