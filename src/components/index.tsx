@@ -14,3 +14,6 @@ export {default as SingleTopBar} from './SingleTopBar';
 export {default as IconBtn} from './IconBtn';
 export {default as ProductCard} from './ProductCard';
 export {default as SizeBtn} from './SizeBtn';
+export {default as FormInpSm} from './FormInpSm';
+export {default as PaymentCard} from './PaymentCard';
+export {default as PaymentMethod} from './PaymentMethod';

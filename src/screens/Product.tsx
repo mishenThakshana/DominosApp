@@ -11,7 +11,7 @@ const Product: FC<ProductInterface> = ({navigation}) => {
   return (
     <SafeAreaView style={styles.rootContainer}>
       <SingleTopBar navigation={navigation} />
-      <ProductCard />
+      <ProductCard navigation={navigation} />
     </SafeAreaView>
   );
 };

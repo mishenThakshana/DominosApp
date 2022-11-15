@@ -30,6 +30,15 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     paddingHorizontal: 20,
     paddingVertical: 5,
+    marginVertical: 5,
+  },
+  textInpSmContainer: {
+    backgroundColor: 'rgba(0,0,0,0.1)',
+    borderRadius: 10,
+    paddingHorizontal: 25,
+    paddingVertical: 5,
+    marginVertical: 5,
+    marginHorizontal: 6,
   },
   formBtnContainerSm: {
     paddingHorizontal: 40,
@@ -129,6 +138,32 @@ const styles = StyleSheet.create({
     textAlign: 'justify',
     letterSpacing: 1,
     marginVertical: 20,
+  },
+  detailsContainer: {
+    marginHorizontal: 10,
+    alignItems: 'center',
+  },
+  detailTitle: {
+    color: colors.SECONDARY,
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginVertical: 10,
+  },
+  detailTitleContainer: {
+    marginHorizontal: 50,
+  },
+  creditCardInputContainer: {
+    alignItems: 'center',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  payementMethod: {
+    width: 20,
+    height: 20,
+    backgroundColor: 'rgba(0,0,0,0.1)',
+    borderRadius: 100,
+    borderWidth: 1,
+    marginLeft: 5,
   },
 });
 

@@ -1,5 +1,5 @@
 import {FC} from 'react';
-import {SafeAreaView} from 'react-native';
+import {SafeAreaView, ScrollView} from 'react-native';
 import {
   Topbar,
   SectionHeading,
@@ -17,11 +17,13 @@ const Home: FC<HomeInterface> = ({navigation}) => {
   return (
     <SafeAreaView style={styles.rootContainer}>
       <Topbar location="Sri Lanka, Colombo" />
-      <DealsTab />
-      <SectionHeading title="Explore Menu" />
-      <PizzaMenu navigation={navigation} />
-      <SectionHeading title="Best Sellers" />
-      <BestSellers />
+      <ScrollView>
+        <DealsTab />
+        <SectionHeading title="Explore Menu" />
+        <PizzaMenu navigation={navigation} />
+        <SectionHeading title="Best Sellers" />
+        <BestSellers />
+      </ScrollView>
     </SafeAreaView>
   );
 };

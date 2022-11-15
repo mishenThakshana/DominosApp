@@ -1,16 +1,16 @@
 import {FC} from 'react';
-import {View, TextInput} from 'react-native';
+import {View, Text, TextInput} from 'react-native';
 import {colors} from 'src/constants';
 import styles from 'src/styles/Global.style';
 
-interface FormInputInterface {
+interface FormInpSmInterface {
   placeholder: string;
   type?: string;
 }
 
-const FormInput: FC<FormInputInterface> = ({placeholder, type}) => {
+const FormInpSm: FC<FormInpSmInterface> = ({placeholder, type}) => {
   return (
-    <View style={styles.textInputContainer}>
+    <View style={styles.textInpSmContainer}>
       <TextInput
         placeholder={placeholder}
         placeholderTextColor={colors.DARKGRAY}
@@ -21,4 +21,4 @@ const FormInput: FC<FormInputInterface> = ({placeholder, type}) => {
   );
 };
 
-export default FormInput;
+export default FormInpSm;

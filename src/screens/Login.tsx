@@ -30,7 +30,7 @@ const Login: FC<LoginInterface> = ({navigation}) => {
             style={{color: colors.SECONDARY, fontSize: 14, marginRight: 10}}>
             +94
           </Text>
-          <FormInput placeholder="Mobile No:" />
+          <FormInput type="number" placeholder="Mobile No:" />
         </View>
         <FormBtn label="SUBMIT" size="sm" type="success" />
       </InputCard>
