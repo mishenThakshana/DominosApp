@@ -3,8 +3,6 @@
 # Steps
 npm install && npm run android/npm run iOS
 
-![Alt Text](https://media.giphy.com/media/GwkVsebFVM9cv5OnCe/giphy.gif)
-
 ![image](https://user-images.githubusercontent.com/102714819/201808610-0810aae3-1768-4da0-bbb4-4410c9ed2672.png)
 
 ![image](https://user-images.githubusercontent.com/102714819/201808687-3fefc4e1-9c07-4cf9-8e54-c59fbdae43ab.png)
